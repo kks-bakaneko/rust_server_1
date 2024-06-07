@@ -1,0 +1,8 @@
+/Users/kks/Documents/study/rust/Server/eztutors/target/debug/deps/libadler-15c58f055ac3b022.rmeta: /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/lib.rs /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/algo.rs
+
+/Users/kks/Documents/study/rust/Server/eztutors/target/debug/deps/libadler-15c58f055ac3b022.rlib: /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/lib.rs /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/algo.rs
+
+/Users/kks/Documents/study/rust/Server/eztutors/target/debug/deps/adler-15c58f055ac3b022.d: /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/lib.rs /Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/algo.rs
+
+/Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/lib.rs:
+/Users/kks/.cargo/registry/src/index.crates.io-6f17d22bba15001f/adler-1.0.2/src/algo.rs:

@@ -1,0 +1,7 @@
+libdir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-65c2ae15946d1d88/out/openssl-build/install/lib
+includedir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-65c2ae15946d1d88/out/openssl-build/install/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 3.3.0
+Requires: libssl libcrypto

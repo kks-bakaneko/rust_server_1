@@ -1,0 +1,1 @@
+fn(Data<AppState>, actix_web::web::Path<(i32, i32)>, models::course::UpdateCourse) -> impl std::future::Future<Output = Result<HttpResponse, EzyTutorError>> {handlers::course::update_course_details}

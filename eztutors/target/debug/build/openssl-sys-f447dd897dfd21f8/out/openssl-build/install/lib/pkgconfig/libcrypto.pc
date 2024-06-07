@@ -1,0 +1,11 @@
+libdir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-f447dd897dfd21f8/out/openssl-build/install/lib
+includedir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-f447dd897dfd21f8/out/openssl-build/install/include
+enginesdir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-f447dd897dfd21f8/out/openssl-build/install/lib/engines-3
+modulesdir=/Users/kks/Documents/study/rust/Server/eztutors/target/debug/build/openssl-sys-f447dd897dfd21f8/out/openssl-build/install/lib/ossl-modules
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.0
+Libs: -L${libdir} -lcrypto
+Libs.private: 
+Cflags: -I${includedir}
