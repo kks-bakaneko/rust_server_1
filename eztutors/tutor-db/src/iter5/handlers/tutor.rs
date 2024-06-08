@@ -16,19 +16,18 @@ pub async fn get_tutor_details(
     tutor_id: web::Path<i32>
 ) -> Result<HttpResponse, EzyTutorError> {
     let tutor = tutor_id.into_inner();
-    get_tutor_details_db(app_state.db, tutor)
+    get_tutor_details_db(&app_state.db, tutor)
         .await
         .map(|tutor| HttpResponse::Ok().json(tutor))
 }
 
 pub async fn post_new_tutor(
     app_state: web::Data<AppState>,
-    tutor_id: web::Path<i32>,
     new_tutor: web::Json<NewTutor>,
 ) -> Result<HttpResponse, EzyTutorError> {
-    let tutor = tutor_id.into_inner();
+    //let tutor = tutor_id.into_inner();
     let tutor_detail = NewTutor::from(new_tutor);
-    post_new_tutor_db(app_state.db, tutor, new_tutor)
+    post_new_tutor_db(&app_state.db,  tutor_detail)
         .await
         .map(|tutor| HttpResponse::Ok().json(tutor))
 }
@@ -40,7 +39,7 @@ pub async fn update_tutor_details(
 ) -> Result<HttpResponse, EzyTutorError> {
     let tutor = tutor_id.into_inner();
     let tutor_detail = UpdateTutor::from(update_tutor);
-    update_tutor_details_db(app_state.db, tutor, tutor_detail)
+    update_tutor_details_db(&app_state.db, tutor, tutor_detail)
         .await
         .map(|tutor| HttpResponse::Ok().json(tutor))
 }
@@ -50,7 +49,7 @@ pub async fn delete_tutor(
     tutor_id: web::Path<i32>,
 ) -> Result<HttpResponse, EzyTutorError> {
     let tutor = tutor_id.into_inner();
-    delete_tutor_db(app_state.db, tutor)
+    delete_tutor_db(&app_state.db, tutor)
         .await
         .map(|tutor| HttpResponse::Ok().json(tutor))
 }
